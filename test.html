@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+		<style>
+			body {
+				background-color: #49C6B7;
+				color: #FFFFFF;
+				line-height: 25px;
+				font-family: "Open Sans", sans-serif;
+				font-size: 14px;
+			}
+
+			div {
+				margin: 0 auto;
+				padding: 10px 0;
+				width: 70%;
+			}
+
+			h1 {
+				text-align: center;
+			}
+
+			b {
+				font-size: 25px;
+				text-align: center;
+			}
+
+			code {
+				background-color: #EAEDEF;
+				color: #494949;
+				margin: 10px 0;
+				padding: 3px;
+			}
+
+			.warning {
+				text-align: center;
+			}
+
+			.cam-like-poop {
+				font-size: 30px;
+				font-style: italic;
+				font-weight: 600;
+				margin: 20px auto;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Hi Cam, this is just a test page!</h1>
+		<div>
+			So if you type <p><code>git branch</code></p> you should be on branch <p><code>master</code></p>
+		</div>
+
+		<div>
+			Master is the branch that should be deployed. If you are writing code or making changes
+			<p class="warning"><b>NEVER BE ON THE MASTER BRANCH</b></p>
+		</div>
+
+		<div>
+			What you should do is make your own branch. Type <p><code>git checkout -b my-new-branch</code></p> Or instead of
+			my-new-branch, whatever you want. Now try making a change to the line below in the code in Sublime or Atom.
+		</div>
+
+		<!--
+		***********************************
+		***********************************
+			CAM CHANGE THIS CODE HERE!
+		***********************************
+		***********************************
+		-->
+		<div class="cam-like-poop">
+			My name is Cam and I like poop.
+		</div>
+
+		<div>
+			Changed? Okay cool, save your code and in cmd type <p><code>git status</code></p>
+			It should show this <p><code>test.html</code><p> file. Now type <p><code>git add .</code></p>
+			So this adds this file as something you have changed and are ready to be merged into the main application.
+			Now type <p><code>git commit -m "SOME MESSAGE ABOUT WHAT YOU'VE CHANGED (ie. Added my name)"</code></p> So yeah, change the
+			commit message to something describing what's changed.
+			Once that's all set, type <p><code>git push</code></p> and it should return something saying a new branch in the remote
+			repo has been made. Awesome!
+		</div>
+
+		<div>
+			Now, you go to Github to the this project's repo and make sure you are signed in! [REPO LINK HERE].
+			So there will be a notification somewhere on the page saying to open a pull request with a green button. Press that,
+			and your commit message should be there and the page should show what changes you've actually made in code. If
+			that's what you want, go all the way to the bottom and press to open the pull request.
+		</div>
+
+		<div>
+			Github is awesome with letting other people review code before it gets merged into the main app. Tons of companies
+			use Github to manage their projects. Google, Airbnb, MongoDB, Wordpress, so many. So a person will go in (me in this case)
+			and review this PR (pull request). I can either approve or leave comments. Once it's been approved and merged in, then yay
+			your new code is in the master version!
+		</div>
+
+		<div>
+			So if you were to wanna make another change or build more in this project, you'd go back to your cmd, get the latest master
+			<p><code>git checkout master</code></p> Now to get the newly merged in stuff, type <p><code>git pull -r</code></p>
+			Now it should say that new things have been added or master has been updated. Now make another branch
+			<p><code>git checkout -b NEW_BRANCH_NAME_HERE</code></p> and continue to code away!
+		</div>
+	<body>
+</html>
